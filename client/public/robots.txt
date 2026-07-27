@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /api/
+
+# Update this URL to match your production domain:
+# Sitemap: https://yourdomain.com/sitemap.xml
