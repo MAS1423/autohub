@@ -1,0 +1,20 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "pnpm build:client",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/uploads/:path*",
+      "destination": "/api?__vercel_route=uploads&__vercel_path=:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api?__vercel_path=:path*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

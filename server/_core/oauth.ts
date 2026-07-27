@@ -1,4 +1,4 @@
-import { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
+import { COOKIE_NAME, ONE_YEAR_MS } from "../../shared/const";
 import { compare as bcryptCompare, hash as bcryptHash } from "bcryptjs";
 import type { Express, Request, Response } from "express";
 import * as db from "../db";

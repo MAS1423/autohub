@@ -3,7 +3,9 @@
  * Files are stored in the UPLOAD_DIR directory (default: ./uploads/).
  * Served via GET /uploads/<key>.
  *
- * To use S3 instead, set S3_BUCKET + S3_REGION + S3_ACCESS_KEY_ID + S3_SECRET_ACCESS_KEY.
+ * The current implementation is local-disk only. Environment placeholders for
+ * object storage exist in `_core/env.ts`, but an S3 adapter has not been added
+ * to this module yet.
  */
 import fs from "fs";
 import path from "path";
